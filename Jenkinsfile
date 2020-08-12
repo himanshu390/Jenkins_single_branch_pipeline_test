@@ -8,7 +8,7 @@ pipeline {
                 //sh "python3 test_jenkins.py"
                 sh "pwd"
                 sh "sudo chmod +x test.sh"
-                input('Do you want to proceed for testing?')
+                //input('Do you want to proceed for testing?')
                 
             }
         }
@@ -18,7 +18,7 @@ pipeline {
                 sh """
                 ./test.sh
                 echo "name"
-                sh "echo \"from shell name=${name}\""
+                //sh "echo \"from shell name=${name}\""
                 """
                 
                 
