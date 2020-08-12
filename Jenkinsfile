@@ -5,13 +5,28 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh "python3 test_jenkins.py"
+                //sh "python3 test_jenkins.py"
                 sh "pwd"
                 sh "sudo chmod +x test.sh"
+                input('Do you want to proceed for testing?')
+                
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
                 sh "./test.sh"
-                //sh "read -p 'name: ' name"
-                input('Do you want to proceed?')
-                sh "ls"
+                 input('Do you want to proceed for Deployment?')
+               
+            }
+        }
+        stage('Deploy') {
+            steps {
+                
+                echo 'Deploying..'
+               
+                
+               
             }
         }
         
