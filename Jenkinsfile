@@ -17,7 +17,7 @@ pipeline {
                 echo 'Testing..'
                 sh """
                 ./test.sh
-                echo name
+                echo "name"
                 sh "echo \"from shell name=${name}\""
                 """
                 
