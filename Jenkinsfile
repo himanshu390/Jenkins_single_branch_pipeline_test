@@ -21,7 +21,7 @@ pipeline {
                 //sh "echo \"from shell name=${name}\""
                //sh "name=$name"
                sh '''
-                echo "from shell name=$name"
+                 name=$name
                   '''
                 
                 
