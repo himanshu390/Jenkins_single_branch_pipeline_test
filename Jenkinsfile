@@ -9,7 +9,7 @@ pipeline {
                 sh "pwd"
                 sh "sudo chmod +x test.sh"
                 sh "./test.sh"
-                sh "himanshu"
+                sh "read -p "himanshu""
                 sh "ls"
             }
         }
