@@ -2,4 +2,4 @@
 gcc test.c -o test.o
 # sudo chmod +x test.o
   ./test.o
-read -p 'name: ' name
+# read -p 'name: ' name
