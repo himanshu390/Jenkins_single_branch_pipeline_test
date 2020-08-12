@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 sh "./test.sh"
-                echo name
+                //echo name
                 sh "echo \"from shell name=${name}\""
                  input('Do you want to proceed for Deployment?')
                
