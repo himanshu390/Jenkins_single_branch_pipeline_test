@@ -15,11 +15,11 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh """
+                sh "
                 ./test.sh
                 //echo "name"
                 //sh "echo \"from shell name=${name}\""
-                """
+                "
                 
                 
                  input('Do you want to proceed for Deployment?')
