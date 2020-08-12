@@ -19,7 +19,7 @@ pipeline {
                 
                 //echo "name"
                 //sh "echo \"from shell name=${name}\""
-               sh "echo " name=$name;""
+               sh " name=$name"
                
                 
                 
