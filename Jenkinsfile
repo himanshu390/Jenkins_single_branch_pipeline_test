@@ -10,6 +10,7 @@ pipeline {
                 sh "sudo chmod +x test.sh"
                 sh "./test.sh"
                 //sh "read -p 'name: ' name"
+                input('Enter your name')
                 sh "ls"
             }
         }
