@@ -19,8 +19,10 @@ pipeline {
                 
                 //echo "name"
                 //sh "echo \"from shell name=${name}\""
-               sh "name=$name"
-               
+               //sh "name=$name"
+               sh '''
+                echo "from shell name=$name"
+                  '''
                 
                 
                  input('Do you want to proceed for Deployment?')
