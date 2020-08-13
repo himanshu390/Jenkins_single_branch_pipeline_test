@@ -15,13 +15,14 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh "./test.sh"
+                name=input("What is your name?")
+                sh "./test.sh $name"
                 
                 //echo "name"
                 //sh "echo \"from shell name=${name}\""
                //sh "name=$name"
                sh '''
-                 $name
+                 //$name
                  pwd
                  ls
                   '''
