@@ -15,7 +15,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                name=input("What is your name?")
+                //name=input("What is your name?")
+                sh "read name"
                 sh "./test.sh $name"
                 
                 //echo "name"
