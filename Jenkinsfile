@@ -23,6 +23,7 @@ pipeline {
                sh '''
                  {$name}
                  pwd
+                 ls
                   '''
                 
                 
